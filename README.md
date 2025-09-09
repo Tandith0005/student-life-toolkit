@@ -136,7 +136,7 @@ MongoDB account (for backend database)
 
 Installation
 
-Clone the Repository:git clone https://github.com/Tandith0005/student-life-toolkit
+Clone the Repository: git clone https://github.com/Tandith0005/student-life-toolkit
 cd student-life-toolkit
 
 
