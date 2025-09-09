@@ -1,5 +1,5 @@
-Student Life Toolkit
-Overview
+# 🎓 Student Life Toolkit
+## Overview
 The Student Life Toolkit is a comprehensive React-based web application designed to address common challenges faced by students, streamlining their academic and personal responsibilities. The application integrates tools for managing class schedules, tracking budgets, generating exam practice questions, and planning study tasks. It features two unique components: a Synonyms & Antonyms Tool to enhance vocabulary for academic writing and a Quick Overview Dashboard with an interactive task manager to keep students organized. Built with modern web technologies, including a backend for data persistence, the toolkit ensures a responsive, user-friendly, and visually appealing experience.
 ---
 
