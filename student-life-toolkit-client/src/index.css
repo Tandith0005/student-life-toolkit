@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@layer components {
+  .custom-nav-link {
+    @apply border-b-2 border-transparent hover:border-[#f43f5e] transition duration-300;
+  }
+  .custom-nav-link.active {
+    @apply border-[#f43f5e] text-[#eb1c3f] font-bold;
+  }
+  .custom-link {
+    @apply text-rose-600 border-b-2 border-transparent font-semibold hover:border-b-rose-600 transition duration-300;
+  }
+  .animate-dashed-border {
+    @apply absolute inset-0;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      black 50%,
+      black 60%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-size: 20px 20px;
+    animation: move-dashed-border 2s linear infinite;
+  }
+}
+
+@theme {
+  @keyframes move-dashed-border {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 20px 0;
+    }
+  }
+}
