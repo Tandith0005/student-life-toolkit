@@ -109,6 +109,7 @@ Axios / Fetch API
 Framer Motion (for animations)
 Chart.js (for budget visualizations)
 react-hot-toast (for notifications)
+Firebase for Authentication/Login
 ### Backend
 Node.js with Express
 MongoDB (for persistent storage of classes, budgets, and tasks).
@@ -122,9 +123,9 @@ Deployment: Hosted on Vercel for seamless access.
 
 ## 📂 Project Structure
 student-life-app/
-│── backend/ # Backend API (Node.js, Express, MongoDB)
-│── frontend/ # React app (UI + client logic)
-│── README.md # Documentation
+- │── backend/ # Backend API (Node.js, Express, MongoDB)
+- │── frontend/ # React app (UI + client logic)
+- │── README.md # Documentation
 
 Setup Instructions
 Prerequisites
