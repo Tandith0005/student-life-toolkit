@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-// const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 require("dotenv").config();
 
 // middleware
@@ -146,11 +146,15 @@ async function run() {
       res.send(result);
     });
 
+    app.get('/test', (req, res) => {
+  res.send('Test route working!');
+});
+
     // Send a ping to confirm a successful connection
-    // await client.db("admin").command({ ping: 1 });
-    // console.log(
-    //   "Pinged your deployment. You successfully connected to MongoDB!"
-    // );
+    await client.db("admin").command({ ping: 1 });
+    console.log(
+      "Pinged your deployment. You successfully connected to MongoDB!"
+    );
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
@@ -160,9 +164,6 @@ run().catch(console.dir);
 
 app.get("/", (req, res) => {
   res.send("Student Life Toolkit Server");
-});
-app.get('/test', (req, res) => {
-  res.send('Test route working!');
 });
 
 app.listen(port, () => {
