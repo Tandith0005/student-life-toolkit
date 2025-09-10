@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
+import hero1 from '/hero1.png'
 
 const Hero = () => {
   const headingText = "Simplify Your Student Life".split("");
@@ -128,7 +129,7 @@ const Hero = () => {
                 transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
               >
                 <img
-                  src="/src/assets/hero1.jpg"
+                  src={hero1}
                   alt="Student Dashboard"
                   className="w-full max-w-md rounded-xl shadow-2xl object-cover transform -rotate-2 transition-transform duration-300 hover:rotate-0"
                 />
