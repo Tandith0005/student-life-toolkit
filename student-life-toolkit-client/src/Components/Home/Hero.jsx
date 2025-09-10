@@ -100,12 +100,6 @@ const Hero = () => {
                 >
                   Get Started
                 </Link>
-                <Link
-                  to="/features"
-                  className="inline-block border border-rose-200 text-rose-600 text-lg px-8 py-4 rounded-xl font-semibold hover:bg-rose-50 transition duration-300 text-center"
-                >
-                  Learn More
-                </Link>
               </motion.div>
               
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 text-gray-500">
