@@ -6,8 +6,9 @@ require("dotenv").config();
 
 // middleware
 app.use(cors({
-  origin: ['student-life-toolkit-blond.vercel.app'], 
-  credentials: true
+  origin: 'https://student-life-toolkit-8hr7.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],  
+  allowedHeaders: ['Content-Type', 'X-Custom-Header', 'Authorization', 'Accept'],  
 }));
 app.use(express.json());
 
