@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-import hero1 from '/hero1.png'
+import hero1 from '../../assets/hero1.jpg';
 
 const Hero = () => {
   const headingText = "Simplify Your Student Life".split("");
