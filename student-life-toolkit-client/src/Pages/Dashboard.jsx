@@ -140,7 +140,7 @@ const Dashboard = () => {
       fetchScheduleData();
       fetchTaskData();
     }
-  }, [user?.email]);
+  }, [user]);
 
   // Set task data 
   const handleTaskSave = async () => {

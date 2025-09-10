@@ -52,6 +52,8 @@ async function run() {
     });
     app.get(`/schedules/:user`, async (req, res) => {
       const email = req.params.user;
+      console.log(email)
+      
       const query = { user: email };
       const result = await scheduleCollection.find(query).toArray();
       res.send(result);
