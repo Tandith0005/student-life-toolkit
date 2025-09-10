@@ -146,6 +146,10 @@ async function run() {
       res.send(result);
     });
 
+    app.get('/test', (req, res) => {
+  res.send('Test route working!');
+});
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log(
